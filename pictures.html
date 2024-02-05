@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Amenities Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('rain.jpg');
+      background-size: cover;  
+      background-position: center; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: grey;
+    }
+           
+    .button {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #4CAF50; 
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 8px 4px;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    button a {
+      color: white;
+      text-decoration: none;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 20px;
+      background-color: #FFD700;
+      padding: 16px;
+      margin: 10px;
+      border-radius: 16px;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .slider-wrapper {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      width: 50px;
+      height: 50px;
+      margin-top: -25px;
+      font-size: 24px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="button">
+        <button><a href="WebPage.html">Home</a></button>
+          <button><a href="About_us.html">About Us</a></button>
+      <button><a href="courses.html">Courses</a></button>
+      <button><a href="Contact_us.html">Contact</a></button>
+      <button><a href="Video.html">Video</a></button>
+      <button><a href="picture.html">Pitures</a></button>
+      </div>
+  <h1>College Amenities Page</h1>
+
+  <div class="slider-container">
+    <button class="prev" onclick="plusSlides(-1)">❮</button>
+    <div class="slider-wrapper" id="slider">
+      <div class="slide"><img src="Img1.jpg" alt="Slide 1"></div>
+      <div class="slide"><img src="Img2.jpg" alt="Slide 2"></div>
+      <div class="slide"><img src="Img3.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="Img4.jpg" alt="Slide 2"></div>
+         <div class="slide"><img src="Img5.jpg" alt="Slide 2"></div>
+          <div class="slide"><img src="Img6.jpg" alt="Slide 2"></div>
+    </div>
+    <button class="next" onclick="plusSlides(1)">❯</button>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("slide");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>

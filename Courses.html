@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Course.jpg');
+            background-size: cover;  
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+                
+    .button {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #4CAF50; 
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 8px 4px;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    button a {
+      color: white;
+      text-decoration: none;
+    }
+                
+                h2 {
+            text-align: center;
+            font-size: 60px;
+            background-color: rgba(255,255,255,0.5);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+                }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.5); 
+            padding: 20px;
+            margin-top:auto;
+            text-align: center; 
+            border-radius: 20px;
+            width: 70%;
+            font-size: 18px;
+        }
+        #our-courses{
+          background-color:yellow;
+          border-radius:20px;
+        }
+
+        p {
+            font-weight: bold;
+            color:darkgreen;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-weight: bold;
+            color:red;
+        }
+
+        li {
+            margin-bottom: 10px; /* Adjusted spacing between list items */
+        }
+    </style>
+</head>
+<body>
+     <div class="button">
+        <button><a href="WebPage.html">Home</a></button>
+          <button><a href="About_us.html">About Us</a></button>
+      <button><a href="courses.html">Courses</a></button>
+      <button><a href="Contact_us.html">Contact</a></button>
+      <button><a href="Video.html">Video</a></button>
+      <button><a href="pictures.html">Pitures</a></button>
+      </div>
+    
+    <div class="container">
+      <div id="our-courses">
+      <p><strong><center>Our Courses</center></strong></p>
+      </div>
+        <p><strong>We offer a wide variety of programs to cater to different interests and career goals. From business and engineering to arts and sciences, our programs are designed to provide students with the knowledge and skills they need to excel in their chosen fields.</strong></p>
+        <ul>
+            <li>Teacher Education</li>
+            <li>IT,Computer Science & Programming</li>
+            <li>Engineering</li>
+            <li>Agriculture</li>
+            <li>Professional & Technical Courses</li>
+            <li>Social Science</li>
+            <li>Tourism,Hospitality & Culinary</li>
+        </ul>
+    </div>
+</body>
+</html>

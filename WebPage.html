@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img.jpg');
+            background-size: cover;  
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;');
+            background-size: cover;  
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .main-button {
+      display: none;
+    }
+
+    .main-button + label {
+      background-color: #4CAF50; 
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      margin: 8px 4px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .main-button:checked + label .secondary-buttons {
+      display: flex;
+    }
+
+    .secondary-buttons {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .secondary-buttons button {
+      background-color: #2E8B57; 
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 8px 0;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .secondary-buttons button:hover {
+      background-color: #3E9142;
+    }
+       
+        .main {
+            padding: 20px;
+            margin: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2E8B57;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 16px;
+            text-align: justify;
+            padding: 10px; 
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            button {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+
+            .main {
+                padding: 15px;
+                margin: 5px; 
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 20px; 
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <input type="checkbox" class="main-button" id="mainButton">
+  <label for="mainButton" class="label-hand-icon">👉🏻 Click here!👈🏻
+    <div class="button-container secondary-buttons">
+      <button><a href="About_us.html">About Us</a></button>
+      <button><a href="courses.html">Courses</a></button>
+      <button><a href="Contact_us.html">Contact</a></button>
+      <button><a href="Video.html">Video</a></button>
+      <button><a href="pictures.html">Pitures</a></button>
+    </div>
+  </label>
+    <div class="main">
+        <h1>Welcome to CPSU Kabankalan</h1>
+        <p>At CPSU Kabankalan, we are dedicated to providing high-quality education and preparing students for successful careers. With a diverse range of programs, experienced faculty, and state-of-the-art facilities, we strive to create a dynamic learning environment.</p>
+        <p>Explore our courses, learn more about us, and get in touch with us to start your educational journey.</p>
+    </div>
+</body>
+</html>
